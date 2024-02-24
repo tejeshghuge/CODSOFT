@@ -18,7 +18,7 @@ int main() {
 
     do {
         // Ask the user for a guess
-        cout << "Enter the guess number (between 1 and 100): ";
+        cout << "Enter your guess (between 1 and 100): ";
         cin >> userGuess;
 
         // Increment the attempts counter
@@ -28,9 +28,9 @@ int main() {
         if (userGuess == secretNumber) {
             cout << "Congratulations! You guessed the correct number in " << attempts << " attempts." << endl;
         } else if (userGuess < secretNumber) {
-            cout << "Too close! Try again." << endl;
+            cout << "Too low! Try again." << endl;
         } else {
-            cout << "Too far! Try again." << endl;
+            cout << "Too high! Try again." << endl;
         }
 
     } while (userGuess != secretNumber);
