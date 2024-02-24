@@ -3,14 +3,14 @@
 using namespace std;
 
 int main() {
-    double numA, numB, result;
+    double num1, num2, result;
     char operation;
 
     // Get input from the user
-    cout << "Enter first number: ";
+    cout << "Enter the first number: ";
     cin >> num1;
 
-    cout << "Enter  second number: ";
+    cout << "Enter the second number: ";
     cin >> num2;
 
     // Get the operation from the user
@@ -20,24 +20,24 @@ int main() {
     // Perform the selected operation
     switch (operation) {
         case '+':
-            result = numA + numB;
-            cout << "Result: " << numA << " + " << numB << " = " << result << endl;
+            result = num1 + num2;
+            cout << "Result: " << num1 << " + " << num2 << " = " << result << endl;
             break;
 
         case '-':
-            result = numA - numB;
-            cout << "Result: " << numA << " - " << numB << " = " << result << endl;
+            result = num1 - num2;
+            cout << "Result: " << num1 << " - " << num2 << " = " << result << endl;
             break;
 
         case '*':
-            result = numA * numB;
-            cout << "Result: " << numA << " * " << numB << " = " << result << endl;
+            result = num1 * num2;
+            cout << "Result: " << num1 << " * " << num2 << " = " << result << endl;
             break;
 
         case '/':
-            if (numB != 0) {
-                result = numA / numB;
-                cout << "Result: " << numA << " / " << numB << " = " << result << endl;
+            if (num2 != 0) {
+                result = num1 / num2;
+                cout << "Result: " << num1 << " / " << num2 << " = " << result << endl;
             } else {
                 cout << "Error: Division by zero is not allowed." << endl;
             }
